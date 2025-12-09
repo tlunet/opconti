@@ -46,6 +46,6 @@ $$
 
 for whatever $\alpha$ and ${\bf r}$ we plug in. 
 Usually, there are some generic non-linear solver in Matlab/Python 
-based on MINPACK allowing to solve that using only evaluations of $f$.
+based on MINPACK allowing to solve that using only evaluations of $f$ (`fsolve`).
 I would start by using those to implement the first test cases 
 $\Rightarrow$ just need the definition of $f({\bf y}, {\bf u})$
