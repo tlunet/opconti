@@ -1,0 +1,35 @@
+.vscode
+
+# For code
+*.py[cod]
+*.so
+*.asv
+*.m~
+*.mex*
+
+# For grib
+*.ods#
+*~
+*.aux
+*.auxlock
+*.bbl
+*.ilg
+*.ind
+*.blg
+*.log
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.nav
+*.out
+*.snm
+*.toc
+*.vrb
+*.xml
+*_minted-*
+*.maf
+*.thm
+*.idx
+*.mtc*
+*.pyc
+*.bcf
