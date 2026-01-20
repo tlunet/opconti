@@ -13,6 +13,14 @@
 
 _Short summary on the late discussions ..._
 
+> Meeting 20/01/2026 (LL, GC, TL)
+
+- idea of using a coarse time grid when decomposing the variables
+- first tests from LL on the domain decomposition
+- objectives : write down the decomposition on the continuous level (theory behind the code)
+  - stick to linear quadratic
+  - solve globally a using a "local" right-hand-side 
+
 > [GC]
 
 A) I would like to consider at least three test cases:
