@@ -27,6 +27,10 @@ H2fc = H(N-n2:end, 1:N-1-n2); H2cf = H(1:N-1-n2, N-n2:end);
 %partition
 R1t = R1; R1t(n1-na+1:n1, n1-na+1:n1) = 1/2*speye(na);
 R2t = R2; R2t(1:na, N-n2:N-n2+na-1) = 1/2*speye(na);
+% for j = 1:na
+%     R1t(end-j+1, n1-j+1) = 1/2;
+%     R2t(j, end-n2+j) = 1/2;
+% end
 R1t'*R1 + R2t'*R2 %check if identity
 
 %two Schur complements
@@ -35,5 +39,5 @@ S2 = H2ff - H2fc*(H2cc\H2cf);
 
 %iterative matrix for u
 al = 10;
-rho = R1t'*(speye(n1) - al*S1)*R1 - R2t'*(speye(n2) - al*S2)*R2;
+rho = R1t'*(speye(n1) - al*S1)*R1 + R2t'*(speye(n2) - al*S2)*R2;
 max(abs(eig(full(rho))))
