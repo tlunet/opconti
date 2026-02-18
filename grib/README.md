@@ -13,6 +13,9 @@
 
 _Short summary on the late discussions ..._
 
+> Meeting 18/02/2026 (GC, LL, TL, TV)
+  see ![notes from Gabriele](PhotoGabriele.png)
+
 > Meeting 20/01/2026 (LL, GC, TL)
 
 - idea of using a coarse time grid when decomposing the variables
